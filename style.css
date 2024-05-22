@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #134f53;
+  --secondary-color: #153638;
+  --neutral-color: #faffff;
+  --neutral-color-2: #c8cccc;
+  --neutral-color-3: #191a1a;
+
+  /* fill: var(--neutral-color); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: fit-content(100%);
+  /* padding: 24px 72px; */
+  padding: 4px 72px;
+  /* overflow: hidden; */
+  z-index: 9999;
+  /* border: 2px solid rgb(189, 103, 41); */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  padding-top: 200px;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+  color: var(--neutral-color);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+  font-size: 48px;
+  color: var(--neutral-color);
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--neutral-color);
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--neutral-color);
+}
+
+navbar1 nav {
+  transition: top 0.8s;
+}
+
+.navbar1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* border: 5px solid rgb(135, 135, 203); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+navbar2 nav {
+  transition: top 0.8s;
+}
+
+navbar2 nav ul.slideMenu {
+  transform: translate(0%);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+navbar2 .a-navigationbar {
+  /* ini untuk warna tulisan linkedin medium dll yaa */
+  color: var(--secondary-color);
+}
+
+navbar2 .a-navigationbar:hover {
+  text-decoration: underline var(--secondary-color) 2px dotted;
+  text-underline-offset: 8px; /* untuk atur spacing dari text dan underline */
+}
+
+navbar2 li {
+  display: flex;
+  justify-content: center;
+  /* ini untuk font size buat si tulisan linkedin medium dll ya */
+  font-size: 32px;
+  font-weight: 550;
+}
+
+navbar2 .icons {
+  width: 64px;
+  height: 64px;
+}
+
+li {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  text-decoration: none;
+  /* border: 3px solid salmon; */
+}
+
+.a-navigationbar {
+  text-decoration: none;
+  color: var(--neutral-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.a-navigationbar:hover {
+  text-decoration: underline var(--neutral-color) 2px dotted;
+  text-underline-offset: 8px; /* untuk atur spacing dari text dan underline */
+}
+
+.a-navigationbar2 {
+  display: none;
+}
+
+.container-body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 40px;
+  /* border: 5px solid #4caf50; */
+  gap: 100px;
+  height: auto;
+}
+
+.hero {
+  height: auto;
+  /* border: 1px solid #ccdacd; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 48px;
+}
+
+.picturemyselfhero {
+  mix-blend-mode: luminosity;
+  width: 500px;
+  /* border: 5px solid magenta; */
+  /*  position: relative; */
+  /* left: 40px; */
+}
+
+.namehero {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid red; */
+  justify-content: center;
+  /* position: sticky; */
+  /* right: 100px; */
+  gap: 20px;
+}
+
+.texthero {
+  margin: 0;
+}
+
+.textproject {
+  margin: 0;
+}
+
+.container-titleprojects-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* border: 3px solid yellow; */
+}
+
+.containercard {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid rgb(248, 114, 11); */
+  gap: 80px;
+}
+
+.card {
+  flex-direction: row;
+}
+
+.cardreverse {
+  flex-direction: row-reverse;
+}
+
+.card,
+.cardreverse {
+  display: flex;
+  background-color: var(--neutral-color);
+  height: auto;
+  width: auto;
+  gap: 40px;
+  padding: 32px 40px;
+  border-radius: 48px;
+  /* border: 4px solid rgb(255, 0, 255); */
+}
+
+.picturecard {
+  width: 500px;
+  /* border: 6px solid #4caf50; */
+}
+
+.container-carddetails-buttoncard {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid thistle; */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.carddetails {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.carddetails h2,
+.carddetails p {
+  margin: 0;
+  color: var(--neutral-color-3);
+}
+
+.buttoncard {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--neutral-color);
+  padding: 28px 48px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 24px;
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  /* min-width: fit-content;
+  min-height: fit-content; */
+  width: auto;
+  height: auto;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.buttoncard:hover {
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: var(--neutral-color) !important;
+}
+
+.icons {
+  width: 48px;
+  height: 48px;
+  pointer-events: none; /* Agar mau nurut sama ke tag a nya, soalnya klo gaada ini bakalan gabisa hover and click link */
+}
+
+.logoicons {
+  width: 200px;
+}
+
+/* HAMBURGER MENU */
+
+/* CORE */
+.hamburger-toggle {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  justify-content: space-between;
+  align-self: center;
+  z-index: 1;
+  /* border: 6px solid rgb(204, 136, 35); */
+}
+
+/* CHECKBOX */
+.hamburger-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 31px;
+  bottom: 50px;
+  z-index: 2;
+  -webkit-touch-callout: none;
+  opacity: 0%;
+}
+
+/* SPAN LINE */
+.hamburger-toggle span {
+  display: block; /* to ensure that each span element occupies its own line. */
+  width: 40px;
+  height: 8px;
+  position: relative;
+  background-color: var(--neutral-color);
+  border-radius: 4px;
+  z-index: 1;
+  transition: all 0.8s;
+}
+
+/* SPAN LINE CONDIION IF CHECKBOX CHECKED --> SHOULD BE CLOSE BUTTON "X" */
+
+.hamburger-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.hamburger-toggle input:checked ~ span:nth-child(2) {
+  /* nilai nth-child berdasarkan baris keberapa inside div */
+  /* background-color: greenyellow; */
+  transform: rotate(45deg) translate(8px, -4px);
+}
+
+.hamburger-toggle input:checked ~ span:nth-child(3) {
+  /* background-color: rgb(241, 10, 218); */
+  transform: scale(0);
+}
+
+.hamburger-toggle input:checked ~ span:nth-child(4) {
+  /* background-color: red; */
+  transform: rotate(-45deg) translate(10px, -12px);
+}
+
+/* ini buat atur warna di SVG langsung, sepertinya gabisa atur ukuran sekalian jd dipisah untuk di class HTML aja */
+
+.coloricons {
+  fill: var(--neutral-color);
+}
+
+.coloricons-hamburger {
+  fill: var(--secondary-color);
+}
+
+/* ini warna logo */
+
+.coloricons-logo {
+  fill: var(--neutral-color);
+}
+
+/* stop scrolling */
+
+.stopScroll {
+  overflow: hidden;
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overscroll-behavior: none;
+}
+
+/* Responsive Design */
+/* BIG SCREEN */
+@media screen and (min-width: 1546px) {
+  .hamburger-toggle,
+  navbar2 {
+    display: none;
+  }
+  .coloricons {
+    fill: var(--neutral-color);
+  }
+}
+/* Laptop */
+@media screen and (max-width: 1545px) {
+  body {
+    /* background-color: slateblue; */
+  }
+
+  .hamburger-toggle,
+  navbar2 {
+    display: none;
+  }
+
+  .card,
+  .cardreverse {
+    flex-direction: column;
+  }
+
+  .picturecard {
+    align-self: center;
+  }
+
+  .coloricons {
+    fill: var(--neutral-color);
+  }
+}
+/* Tablet */
+@media screen and (max-width: 1011px) {
+  body {
+    /* background-color: burlywood; */
+  }
+
+  .card,
+  .cardreverse {
+    flex-direction: column;
+  }
+
+  .picturecard {
+    align-self: center;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .picturemyselfhero {
+    align-self: center;
+  }
+
+  .namehero {
+    text-align: center;
+  }
+
+  navbar1,
+  .navbar1 {
+    display: none;
+  }
+
+  .hamburger-toggle,
+  navbar2 {
+    display: flex;
+  }
+
+  .textproject {
+    text-align: center;
+  }
+
+  navbar2 nav ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left: 0;
+    /* padding-left: 30;
+    padding-right: 30; */
+    margin-top: 116px;
+    /* margin-left: -68px; */
+    margin-left: -28px;
+    /* margin-right: 2230px; */
+    transform: translateX(100%);
+    background-color: var(--neutral-color);
+    z-index: 100;
+    gap: 40px;
+    width: 100vw;
+    height: 60vh;
+    /* backdrop-filter: blur(10px); */
+    opacity: 0;
+    transition: 0.8s;
+    /* overflow-y: scroll; pindah ke media*/
+    /* border: 1px solid red; */
+  }
+  navbar2 nav ul li {
+    /* border: 10px solid red; */
+  }
+  navbar2 nav {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .container-body {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  /* Phone */
+  @media screen and (max-width: 464px) {
+    body {
+      /* background-color: skyblue; */
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    /* h2 {
+      font-size: 24px;
+    } */
+
+    .buttoncard {
+      padding: 28px;
+    }
+  }
+
+  /* @media screen and (max-height: 700px) {
+    navbar2 nav ul {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    navbar2 nav ul {
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+    }
+  } */
+
+  @media screen and (max-height: 370px) {
+    navbar2 nav ul {
+      flex-direction: row;
+      /* gap: 20; */
+      justify-content: space-evenly;
+      /* border: 4px solid saddlebrown; */
+      padding-top: 8vh;
+      padding-bottom: 8vh;
+    }
+
+    navbar2 nav ul li {
+      /* border: 4px solid saddlebrown; */
+      height: fit-content;
+    }
+
+    .a-navigationbar {
+      display: none;
+    }
+
+    .a-navigationbar2 {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-height: 436px) {
+    navbar2 nav ul {
+      overflow-y: scroll;
+    }
+  }
+}
