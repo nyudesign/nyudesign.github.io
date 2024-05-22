@@ -550,6 +550,7 @@ li {
       /* overflow-y: hidden; */
       overflow: hidden;
       scrollbar-width: none;
+      -ms-overflow-style: none;
       /* -webkit-scrollbar { display: none; } */
       /* touch-action: none; */
       /* -webkit-overflow-scrolling: none;
